@@ -1,8 +1,9 @@
 package com.udemy;
-// calculating what year is a leap year
+
 
 public class NumberOfDaysInMonth {
 
+    // calculating what year is a leap year
     public static boolean isLeapYear(int year) {
 
         if (year < 1 || year > 9999)
@@ -12,7 +13,7 @@ public class NumberOfDaysInMonth {
         } else return false;
 
     }
-
+    //telling how many days are in the given month
     public static int getDaysInMonth(int month, int year) {
         if ((month < 1 || month > 12) && (year < 1 || year > 9999)) {
             return -1;
@@ -28,7 +29,7 @@ public class NumberOfDaysInMonth {
                 case 10:
                 case 12:
                     return 31;
-                    //break?
+                //break?
                 case 4:
                 case 6:
                 case 9:
@@ -43,3 +44,5 @@ public class NumberOfDaysInMonth {
     }
 
 }
+
+

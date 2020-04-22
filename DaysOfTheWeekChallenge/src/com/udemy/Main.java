@@ -13,8 +13,8 @@ public class Main {
         NumberInWord.printNumberInWord(-3);
         NumberInWord.printNumberInWord(16);
 
-        System.out.println(  NumberOfDaysInMonth.isLeapYear(2013));
-        System.out.println( NumberOfDaysInMonth.getDaysInMonth(2, 2020));
+        System.out.println(NumberOfDaysInMonth.isLeapYear(2013));
+        System.out.println(NumberOfDaysInMonth.getDaysInMonth(2, 2020));
         System.out.println(NumberOfDaysInMonth.getDaysInMonth(2, -1900));
         System.out.println(NumberOfDaysInMonth.getDaysInMonth(5, 2010));
     }
