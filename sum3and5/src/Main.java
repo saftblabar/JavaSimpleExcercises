@@ -16,5 +16,9 @@ public class Main {
         }
         //printing sum of found numbers:
         System.out.println("Sum of found numbers: " +sum);
+
+        //excercise 2:
+        System.out.println("The sum of odd numbers between given parameters: "
+                + excercise2.sumOdd(1, 100));
     }
 }
