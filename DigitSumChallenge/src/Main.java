@@ -2,9 +2,10 @@ public class Main {
     public static void main(String[] args) {
         //System.out.println(sumDigits(125));
 
-        System.out.println(isPalindrome(1221));
+       // System.out.println(isPalindrome(1221));
         //     System.out.println(isPalindrome2(121));
-        System.out.println(sumFirstAndLastDigit(5782));
+       // System.out.println(sumFirstAndLastDigit(5782));
+        System.out.println(getEvenDigitSum(1234));
     }
 
     private static int sumDigits(int number) {
@@ -86,5 +87,30 @@ public class Main {
 
         return firstdigit + lastdigit;
     }
+
+
+
+    public static int getEvenDigitSum(int number) {
+
+        if (number < 0) {
+            return -1;
+        }
+
+        int sum = 0;
+
+        while (number != 0) {
+            //taking last digit from number
+            int digit = number % 10;
+            //checking if it's an even number
+            if (digit % 2 == 0) {
+                //add it to sum if true
+                sum += digit;
+            }
+            //dividing number to get another last digit
+            number /= 10;
+        }
+        return sum;
+    }
+
 }
 
