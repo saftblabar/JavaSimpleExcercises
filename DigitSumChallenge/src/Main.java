@@ -2,10 +2,11 @@ public class Main {
     public static void main(String[] args) {
         //System.out.println(sumDigits(125));
 
-       // System.out.println(isPalindrome(1221));
-        //     System.out.println(isPalindrome2(121));
-       // System.out.println(sumFirstAndLastDigit(5782));
-        System.out.println(getEvenDigitSum(1234));
+        // System.out.println(isPalindrome(1221));
+        // System.out.println(isPalindrome2(121));
+        // System.out.println(sumFirstAndLastDigit(5782));
+        // System.out.println(getEvenDigitSum(1234));
+        System.out.println(hasSharedDigit(15, 33));
     }
 
     private static int sumDigits(int number) {
@@ -88,8 +89,6 @@ public class Main {
         return firstdigit + lastdigit;
     }
 
-
-
     public static int getEvenDigitSum(int number) {
 
         if (number < 0) {
@@ -112,5 +111,22 @@ public class Main {
         return sum;
     }
 
+    public static boolean hasSharedDigit(int firstNumber, int secNumber) {
+
+        int temp1, temp2;
+        if ((firstNumber < 10 || firstNumber > 99) || (secNumber < 10 || secNumber > 99)) {
+            return false;
+        } else {
+            temp1 = firstNumber % 10;
+            firstNumber /= 10;
+            temp2 = secNumber % 10;
+            secNumber /= 10;
+        }
+        if ((temp1 == temp2) || (temp1 == secNumber) || (firstNumber == temp2) || (firstNumber == secNumber)) {
+
+            return true;
+        }
+        return false;
+    }
 }
 
